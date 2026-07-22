@@ -23,7 +23,7 @@ struct NewPostPage {
       Row() {
         Text('取消')
           .fontSize(16)
-          .fontColor('#999999')
+          .fontColor('#888888')
           .onClick(() => {
             this.getUIContext().getRouter().back();
           })

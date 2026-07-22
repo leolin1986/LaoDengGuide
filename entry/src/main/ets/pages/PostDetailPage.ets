@@ -112,7 +112,7 @@ struct PostDetailPage {
                 .fontSize(20)
               Text(`${this.post.likes}`)
                 .fontSize(14)
-                .fontColor(this.post.liked ? '#FF6B35' : '#999999')
+                 .fontColor(this.post.liked ? '#FF6B35' : '#666666')
                 .margin({ left: 4 })
             }
             .margin({ right: 32 })
@@ -123,9 +123,9 @@ struct PostDetailPage {
             Row() {
               Text('💬')
                 .fontSize(20)
-              Text(`${this.post.comments}`)
-                .fontSize(14)
-                .fontColor('#999999')
+               Text(`${this.post.comments}`)
+                 .fontSize(14)
+                 .fontColor('#666666')
                 .margin({ left: 4 })
             }
           }
@@ -146,7 +146,7 @@ struct PostDetailPage {
           if (this.commentList.length === 0) {
             Text('暂无评论，快来抢沙发！')
               .fontSize(14)
-              .fontColor('#CCCCCC')
+              .fontColor('#888888')
               .margin({ top: 24, bottom: 24 })
           } else {
             ForEach(this.commentList, (comment: Comment) => {
@@ -159,9 +159,9 @@ struct PostDetailPage {
                       .fontSize(14)
                       .fontWeight(FontWeight.Bold)
                       .fontColor('#333333')
-                    Text(comment.timestamp)
-                      .fontSize(12)
-                      .fontColor('#CCCCCC')
+               Text(comment.timestamp)
+                 .fontSize(12)
+                 .fontColor('#888888')
                       .margin({ left: 8 })
                   }
                   Text(comment.content)
@@ -185,6 +185,7 @@ struct PostDetailPage {
       }
       .layoutWeight(1)
       .align(Alignment.TopStart)
+      .edgeEffect(EdgeEffect.Spring)
 
       Divider()
 

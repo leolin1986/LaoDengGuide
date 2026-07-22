@@ -38,12 +38,12 @@ struct Index {
 
       Text('测测你的「老登指数」')
         .fontSize(18)
-        .fontColor('#999999')
+        .fontColor('#666666')
         .margin({ top: 8 })
 
       Text('你离成为老登还有多远？\n回答10个灵魂拷问，真相即将揭晓！')
         .fontSize(14)
-        .fontColor('#BBBBBB')
+        .fontColor('#666666')
         .textAlign(TextAlign.Center)
         .lineHeight(24)
         .margin({ top: 20 })
@@ -132,7 +132,7 @@ struct Index {
               }
               Text(tip.content)
                 .fontSize(13)
-                .fontColor('#999999')
+                .fontColor('#666666')
                 .lineHeight(20)
                 .margin({ top: 6 })
                 .maxLines(2)
@@ -155,6 +155,7 @@ struct Index {
     .width('100%')
     .height('100%')
     .backgroundColor('#F5F5F5')
+    .edgeEffect(EdgeEffect.Spring)
   }
 
   @Builder
@@ -174,7 +175,7 @@ struct Index {
                     .fontColor('#333333')
                   Text(post.timestamp)
                     .fontSize(12)
-                    .fontColor('#CCCCCC')
+                    .fontColor('#888888')
                     .margin({ left: 8 })
                 }
                 Text(post.title)
@@ -184,7 +185,7 @@ struct Index {
                   .margin({ top: 6 })
                 Text(post.content)
                   .fontSize(13)
-                  .fontColor('#999999')
+                  .fontColor('#666666')
                   .maxLines(2)
                   .textOverflow({ overflow: TextOverflow.Ellipsis })
                   .margin({ top: 4 })
@@ -192,10 +193,10 @@ struct Index {
                 Row() {
                   Text(`👍 ${post.likes}`)
                     .fontSize(12)
-                    .fontColor('#999999')
+                    .fontColor('#666666')
                   Text(`💬 ${post.comments}`)
                     .fontSize(12)
-                    .fontColor('#999999')
+                    .fontColor('#666666')
                     .margin({ left: 16 })
                 }
                 .margin({ top: 8 })
@@ -219,6 +220,7 @@ struct Index {
       }
       .layoutWeight(1)
       .margin({ top: 8 })
+      .edgeEffect(EdgeEffect.Spring)
 
       Button('✏️ 发个动态')
         .width('90%')

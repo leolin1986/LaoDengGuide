@@ -43,7 +43,7 @@ struct ResultPage {
 
         Text('你的老登指数')
           .fontSize(16)
-          .fontColor('#999999')
+          .fontColor('#666666')
 
         Text(`${this.laodengIndex}%`)
           .fontSize(64)
@@ -73,14 +73,14 @@ struct ResultPage {
           Row() {
             Text('总分: ')
               .fontSize(14)
-              .fontColor('#999999')
+              .fontColor('#666666')
             Text(`${this.totalScore}`)
               .fontSize(14)
               .fontWeight(FontWeight.Bold)
               .fontColor('#FF6B35')
             Text(' / 40')
               .fontSize(14)
-              .fontColor('#999999')
+              .fontColor('#666666')
           }
           .margin({ top: 24 })
         }
@@ -128,5 +128,6 @@ struct ResultPage {
     .width('100%')
     .height('100%')
     .backgroundColor('#FFFFFF')
+    .edgeEffect(EdgeEffect.Spring)
   }
 }

@@ -46,7 +46,7 @@ struct QuizPage {
 
       Text(`${this.currentIndex + 1} / ${this.questions.length}`)
         .fontSize(14)
-        .fontColor('#999999')
+        .fontColor('#666666')
         .margin({ top: 8 })
 
       if (this.questions.length > 0) {
